@@ -1,30 +1,6 @@
 <?php
 header("Content-type: text/html;charset=\"utf-8\"");
 
-$recaptcha = $_POST["g-recaptcha-response"];
-
-$data = array(
-    'secret' => '6LcWhnoUAAAAALsE-T70AWX-Kpq-sUIVdOCe3LLH',
-    'response' => $recaptcha
-);
-
-$options = array(
-    'http' => array (
-        'method' => 'POST',
-        'content' => http_build_query($data)
-    )
-);
-
-$context  = stream_context_create($options);
-$verify = file_get_contents($url, false, $context);
-$captcha_success = json_decode($verify);
-
-if ($captcha_success->success) {
-    echo 'Se envía el formulario';
-} else {
-    echo 'No se envía el formulario';
-}
-
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $telefono = $_POST['telefono'];
@@ -49,7 +25,6 @@ $asunto = 'Mensaje de mi sitio web';
 if (mail($para, $asunto, utf8_decode($mensaje), $header))
 echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente');</script>";
 echo "<script type='text/javascript'>window.location.href='index.html';</script>";
-
 
 
 ?>
