@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+.linea_titulo {
+    height: 2px;
+}
+
+hr {
+    background-color: #34BA00;
+}

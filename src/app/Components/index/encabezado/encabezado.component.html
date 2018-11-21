@@ -1,0 +1,88 @@
+<header id = "header" class = "col-12 pl-0 pr-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a id = "logo" class = "navbar-brand p-0" [routerLink]="['/home']">
+      <img src = "../../../../assets/imagenes/logo.PNG" alt = "">
+    </a>
+      
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href = "#" id="productos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          
+          <ul class="dropdown-menu" aria-labelledby="productos">
+            <li><a class="dropdown-item" [routerLink]="['/productos/impresion']">Impresión</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/productos/aplicaciones-de-negocios']">Aplicaciones de negocio</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/productos/inteligencia-de-negocios']">Inteligencia de negocio</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/productos/rrhh-tecnologico']">RRHH tecnológico</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href = "#" id="soluciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Soluciones
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="soluciones">
+            <li><a class="dropdown-item" [routerLink]="['/soluciones/prtaas']">PRTaaS</a></li>
+            
+            <li class = "dropdown dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" id="saas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SAAS
+              </a>
+
+              <!-- class="dropdown-menu" aria-labelledby="sass" -->
+              <ul >
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/plantas-telefonicas-sip']">Plantas SIP</a>
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/software-erp']">Software ERP</a>
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/gestion-de-archivos-digitalizados']">Gestión de archivos digitalizados</a>
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/automatizacion-de-medios-digitales']">Automatización de medios digitales</a>
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/seguridad-electronica']">Seguridad electrónica</a>
+                <a class="dropdown-item" [routerLink]="['/soluciones/saas/administracion-de-impresoras']">Administración de impresión</a>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item" [routerLink]="['/soluciones/smart-office']">SmartOffice</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/soluciones/digitalizacion-de-archivos-historicos']">Digitalización de archivos históricos</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/soluciones/mantenimiento-de-parque-de-los-equipos-electronicos']">Mantenimiento de parque de los equipos electrónicos</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/soluciones/outsourcing-rrhh-tecnologico']">Outsourcing RRHH tecnológico</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-none" [routerLink]="['/desarrollo-de-mercados-verticales']">Desarrollo de mercados verticales</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href = "#" id = "blog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="blog">
+            <li><a class="dropdown-item" [routerLink]="['/blog/quienes-somos']">¿Quiénes somos?</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/blog/experiencias']">Experiencias</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/blog/articulos']">Artículos</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/blog/opiniones']">Opiniones</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item d-none">
+          <a class="nav-link" [routerLink]="['/investigacion-y-desarrollo']">Investigación y desarrollo</a>
+        </li>
+
+        <li class="nav-item">
+          <a id = "contactanos" class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
