@@ -9,3 +9,20 @@ h1 {
 hr {
     background-color: #34BA00;
 }
+
+.imagen {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen img {
+    width: 200px;
+    margin: auto;
+}
+
+#odoo {
+    width: 400px;
+}
