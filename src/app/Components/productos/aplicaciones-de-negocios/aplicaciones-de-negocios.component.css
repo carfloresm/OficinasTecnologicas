@@ -26,3 +26,8 @@ hr {
 #odoo {
     width: 400px;
 }
+
+.alinear {
+    display: flex;
+    align-items: center;
+}

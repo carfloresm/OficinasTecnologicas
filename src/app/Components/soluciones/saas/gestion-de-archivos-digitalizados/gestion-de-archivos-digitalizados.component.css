@@ -9,3 +9,28 @@ h1 {
 hr {
     background-color: #34BA00;
 }
+
+.imagen {
+    width: 100%;
+    min-height: 200px;
+    height: 324px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.imagen_gestion {
+    width: 100%;
+    min-height: 200px;
+    height: 324px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_gestion img {
+    width: 60%;
+    margin: auto;
+}
