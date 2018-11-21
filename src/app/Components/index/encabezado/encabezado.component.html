@@ -35,13 +35,16 @@
           <ul class="dropdown-menu" aria-labelledby="soluciones">
             <li><a class="dropdown-item" [routerLink]="['/soluciones/prtaas']">PRTaaS</a></li>
             
-            <li class = "dropdown dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" id="saas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SAAS
-              </a>
+            <!-- Submenú -->
+            <script src="../../../../assets/submenu.js"></script>
+
+            <li class = "">
+              <h6 class = "dropdown-header">SAAS</h6>
+
+              <div class = "divider"></div>
 
               <!-- class="dropdown-menu" aria-labelledby="sass" -->
-              <ul >
+              <ul>
                 <a class="dropdown-item" [routerLink]="['/soluciones/saas/plantas-telefonicas-sip']">Plantas SIP</a>
                 <a class="dropdown-item" [routerLink]="['/soluciones/saas/software-erp']">Software ERP</a>
                 <a class="dropdown-item" [routerLink]="['/soluciones/saas/gestion-de-archivos-digitalizados']">Gestión de archivos digitalizados</a>
