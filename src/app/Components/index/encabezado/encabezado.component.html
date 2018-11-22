@@ -38,12 +38,7 @@
             <!-- Submenú -->
             <script src="../../../../assets/submenu.js"></script>
 
-            <li>
-              <a class="dropdown-item-text ">
-                SAAS
-              </a>
-
-              <!-- class="dropdown-menu" aria-labelledby="sass" -->
+            <li id = "sumbenu" ><a class="dropdown-item">SAAS</a>
               <ul>
                 <a class="dropdown-item" [routerLink]="['/soluciones/saas/plantas-telefonicas-sip']">Plantas SIP</a>
                 <a class="dropdown-item" [routerLink]="['/soluciones/saas/software-erp']">Software ERP</a>
@@ -67,14 +62,14 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href = "#" id = "blog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Blog
+            Conócenos
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="blog">
-            <li><a class="dropdown-item" [routerLink]="['/blog/quienes-somos']">¿Quiénes somos?</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/blog/experiencias']">Experiencias</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/blog/articulos']">Artículos</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/blog/opiniones']">Opiniones</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/conocenos/quienes-somos']">¿Quiénes somos?</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/experiencias']">Experiencias</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/articulos']">Artículos</a></li>
+            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/opiniones']">Opiniones</a></li>
           </ul>
         </li>
 

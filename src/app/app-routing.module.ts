@@ -94,10 +94,10 @@ const routes: Routes = [
     {path: 'soluciones/outsourcing-rrhh-tecnologico', component: OutsourcingRrhhTecnologicoComponent},
 
   //Blog.
-  {path: 'blog/quienes-somos', component: QuienesSomosComponent},
-  {path: 'blog/experiencias', component: ExperienciasComponent},
-  {path: 'blog/articulos', component: ArticulosComponent},
-  {path: 'blog/opiniones', component: OpinionesComponent},
+  {path: 'conocenos/quienes-somos', component: QuienesSomosComponent},
+  {path: 'conocenos/experiencias', component: ExperienciasComponent},
+  {path: 'conocenos/articulos', component: ArticulosComponent},
+  {path: 'conocenos/opiniones', component: OpinionesComponent},
 
   //Contacto.
   {path: 'contacto', component: ContactoComponent},
