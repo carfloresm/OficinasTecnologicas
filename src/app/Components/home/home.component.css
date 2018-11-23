@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.resaltar {
+    font-weight: bold;
+    color: #97c93e;
+}
+
 h1 {
     color: #97c93e;
 }
