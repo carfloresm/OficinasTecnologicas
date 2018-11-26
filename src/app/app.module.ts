@@ -11,6 +11,11 @@ import { AppRoutingModule } from './app-routing.module';
 //Componente principal.
 import { AppComponent } from './app.component';
 
+//Angular Material.
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatMenuModule } from '@angular/material/menu';
+
 // ******************************** Importar componentes añadidos. ********************************
 //Web principal.
 import { IndexComponent } from './Components/index/index.component';
@@ -146,10 +151,18 @@ import { ErrorComponent } from './Components/error/error.component';
   ],
   imports: [
     BrowserModule,
+
+    //Rutas.
     AppRoutingModule,
+    
     HttpModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    //Angular Material
+    BrowserAnimationsModule,
+
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

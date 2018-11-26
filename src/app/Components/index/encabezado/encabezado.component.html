@@ -9,78 +9,81 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+      <ul class="navbar-nav ml-auto">
+        <li class = "nav-item">
+          <a class = "nav-link" [routerLink]="['/home']" mat-button>
+            Inicio
+          </a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href = "#" id="productos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class = "nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" mat-button [matMenuTriggerFor]="productos">
             Productos
           </a>
-          
-          <ul class="dropdown-menu" aria-labelledby="productos">
-            <li><a class="dropdown-item" [routerLink]="['/productos/impresion']">Impresión</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/productos/aplicaciones-de-negocios']">Aplicaciones de negocio</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/productos/inteligencia-de-negocios']">Inteligencia de negocio</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/productos/rrhh-tecnologico']">RRHH tecnológico</a></li>
-          </ul>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href = "#" id="soluciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class = "nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" mat-button [matMenuTriggerFor]="soluciones">
             Soluciones
           </a>
-
-          <ul class="dropdown-menu" aria-labelledby="soluciones">
-            <li><a class="dropdown-item" [routerLink]="['/soluciones/prtaas']">PRTaaS</a></li>
-            
-            <!-- Submenú -->
-            <script src="../../../../assets/submenu.js"></script>
-
-            <li id = "sumbenu" ><a class="dropdown-item">SAAS</a>
-              <ul>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/plantas-telefonicas-sip']">Plantas SIP</a>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/software-erp']">Software ERP</a>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/gestion-de-archivos-digitalizados']">Gestión de archivos digitalizados</a>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/automatizacion-de-medios-digitales']">Automatización de medios digitales</a>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/seguridad-electronica']">Seguridad electrónica</a>
-                <a class="dropdown-item" [routerLink]="['/soluciones/saas/administracion-de-impresoras']">Administración de impresión</a>
-              </ul>
-            </li>
-
-            <li><a class="dropdown-item" [routerLink]="['/soluciones/smart-office']">SmartOffice</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/soluciones/digitalizacion-de-archivos-historicos']">Digitalización de archivos históricos</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/soluciones/mantenimiento-de-parque-de-los-equipos-electronicos']">Mantenimiento de parque de los equipos electrónicos</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/soluciones/outsourcing-rrhh-tecnologico']">Outsourcing RRHH tecnológico</a></li>
-          </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link d-none" [routerLink]="['/desarrollo-de-mercados-verticales']">Desarrollo de mercados verticales</a>
+        <li class = "nav-item">
+          <a class = "nav-link d-none" [routerLink]="['/desarrollo-de-mercados-verticales']" mat-button>
+            Desarrollo de mercados verticales
+          </a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href = "#" id = "blog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class = "nav-item dropdown">
+          <a class = "nav-link dropdown-toggle" mat-button [matMenuTriggerFor]="conocenos">
             Conócenos
           </a>
-
-          <ul class="dropdown-menu" aria-labelledby="blog">
-            <li><a class="dropdown-item" [routerLink]="['/conocenos/quienes-somos']">¿Quiénes somos?</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/experiencias']">Experiencias</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/articulos']">Artículos</a></li>
-            <li><a class="dropdown-item d-none" [routerLink]="['/conocenos/opiniones']">Opiniones</a></li>
-          </ul>
         </li>
 
-        <li class="nav-item d-none">
-          <a class="nav-link" [routerLink]="['/investigacion-y-desarrollo']">Investigación y desarrollo</a>
+        <li class = "nav-item">
+          <a class = "nav-link d-none" [routerLink]="['/investigacion-y-desarrollo']" mat-button>
+            Investigación y desarrollo
+          </a>
         </li>
 
-        <li class="nav-item">
-          <a id = "contactanos" class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        <li class = "nav-item">
+          <a id = "contactanos" class = "nav-link" [routerLink]="['/contacto']" mat-button>
+            Contacto
+          </a>
         </li>
       </ul>
+      
+      <mat-menu #productos="matMenu">
+        <a class = "dropdown-item" [routerLink]="['/productos/impresion']" mat-menu-item>Impresión</a>
+        <a class = "dropdown-item" [routerLink]="['/productos/aplicaciones-de-negocios']" mat-menu-item>Aplicaciones de negocio</a>
+        <a class = "dropdown-item" [routerLink]="['/productos/inteligencia-de-negocios']" mat-menu-item>Inteligencia de negocio</a>
+        <a class = "dropdown-item" [routerLink]="['/productos/rrhh-tecnologico']" mat-menu-item>RRHH Tecnológico</a>
+      </mat-menu>
+
+      <mat-menu #soluciones="matMenu">
+        <a class = "dropdown-item" [routerLink]="['/soluciones/prtaas']" mat-menu-item>PRTaaS</a>
+        <a class = "dropdown-item" mat-menu-item [matMenuTriggerFor]="saas">SAAS</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/smart-office']" mat-menu-item>SmartOffice</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/digitalizacion-de-archivos-historicos']" mat-menu-item>Digitalización de archivos históricos</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/mantenimiento-de-parque-de-los-equipos-electronicos']" mat-menu-item>Mantenimiento de parque de los equipos electrónicos</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/outsourcing-rrhh-tecnologico']" mat-menu-item>Outsourcing RRHH tecnológico</a>
+      </mat-menu>
+
+      <mat-menu #saas="matMenu">
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/plantas-telefonicas-sip']" mat-menu-item>Plantas SIP</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/software-erp']" mat-menu-item>Software ERP</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/gestion-de-archivos-digitalizados']" mat-menu-item>Gestión de archivos digitalizados</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/automatizacion-de-medios-digitales']" mat-menu-item>Automatización de medios digitales</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/seguridad-electronica']" mat-menu-item>Seguridad electrónica</a>
+        <a class = "dropdown-item" [routerLink]="['/soluciones/saas/administracion-de-impresoras']" mat-menu-item>Administración de impresión</a>
+      </mat-menu>
+      
+      <mat-menu #conocenos="matMenu">
+        <a class = "dropdown-item" [routerLink]="['/conocenos/quienes-somos']" mat-menu-item>¿Quiénes somos?</a>
+        <a class = "dropdown-item d-none" [routerLink]="['/conocenos/experiencias']" mat-menu-item>Experiencias</a>
+        <a class = "dropdown-item d-none" [routerLink]="['/conocenos/articulos']" mat-menu-item>Artículos</a>
+        <a class = "dropdown-item d-none" [routerLink]="['/conocenos/opiniones']" mat-menu-item>Opiniones</a>
+      </mat-menu>      
     </div>
   </nav>
 </header>
