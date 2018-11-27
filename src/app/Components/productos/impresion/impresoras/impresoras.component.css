@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+.linea_titulo {
+    height: 2px;
+}
+
+hr {
+    background-color: #34BA00;
+}
+
+.tarjeta {
+    height: 824px;
+}
+
+.imagen {
+    height: 303px;
+    display: flex;
+    align-items: center;
+}
+
+#kyo {
+    width: 97.5%;
+    margin: auto;
+}

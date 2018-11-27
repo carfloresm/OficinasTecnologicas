@@ -54,10 +54,15 @@
       </ul>
       
       <mat-menu #productos="matMenu">
-        <a class = "dropdown-item" [routerLink]="['/productos/impresion']" mat-menu-item>Impresión</a>
+        <a class = "dropdown-item" mat-menu-item [matMenuTriggerFor]="impresion">Impresión</a>
         <a class = "dropdown-item" [routerLink]="['/productos/aplicaciones-de-negocios']" mat-menu-item>Aplicaciones de negocio</a>
         <a class = "dropdown-item" [routerLink]="['/productos/inteligencia-de-negocios']" mat-menu-item>Inteligencia de negocio</a>
         <a class = "dropdown-item" [routerLink]="['/productos/rrhh-tecnologico']" mat-menu-item>RRHH Tecnológico</a>
+      </mat-menu>
+
+      <mat-menu #impresion="matMenu">
+        <a class = "dropdown-item" [routerLink]="['/productos/impresion/impresoras']" mat-menu-item>Impresoras</a>
+        <a class = "dropdown-item" [routerLink]="['/productos/impresion/tecnologia-de-impresion']" mat-menu-item>Tecnología de impresión</a>
       </mat-menu>
 
       <mat-menu #soluciones="matMenu">

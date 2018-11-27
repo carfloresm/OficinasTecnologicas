@@ -28,7 +28,10 @@ import { PieComponent } from './Components/index/pie/pie.component';
 import { HomeComponent } from './Components/home/home.component';
 
 //Productos.
-import { ImpresionComponent } from './Components/productos/impresion/impresion.component';
+  //Impresión.
+  import { ImpresorasComponent } from './Components/productos/impresion/impresoras/impresoras.component';
+  import { TecnologiaDeImpresionComponent } from './Components/productos/impresion/tecnologia-de-impresion/tecnologia-de-impresion.component';
+
 import { AplicacionesDeNegociosComponent } from './Components/productos/aplicaciones-de-negocios/aplicaciones-de-negocios.component';
 import { InteligenciaDeNegociosComponent } from './Components/productos/inteligencia-de-negocios/inteligencia-de-negocios.component';
 import { RrhhTecnologicoComponent } from './Components/productos/rrhh-tecnologico/rrhh-tecnologico.component';
@@ -65,7 +68,6 @@ import { DesarrolloDeMercadosVerticalesComponent } from './Components/desarrollo
   import { FichaSolucionDosComponent } from './Components/soluciones/fichas_de_contratacion_de_servicios/ficha-solucion-dos/ficha-solucion-dos.component';
 
 //Blog.
-
 import { QuienesSomosComponent } from './Components/blog/quienes-somos/quienes-somos.component';
 import { ExperienciasComponent } from './Components/blog/experiencias/experiencias.component';
 import { ArticulosComponent } from './Components/blog/articulos/articulos.component';
@@ -98,7 +100,11 @@ import { ErrorComponent } from './Components/error/error.component';
     HomeComponent,
 
     //Productos.
-    ImpresionComponent,
+
+      //Impresión
+      ImpresorasComponent,
+      TecnologiaDeImpresionComponent,
+
     AplicacionesDeNegociosComponent,
     InteligenciaDeNegociosComponent,
     RrhhTecnologicoComponent,

@@ -6,7 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './Components/home/home.component';
 
 //Productos.
-import { ImpresionComponent } from './Components/productos/impresion/impresion.component';
+  //Impresión.
+  import { ImpresorasComponent } from './Components/productos/impresion/impresoras/impresoras.component';
+  import { TecnologiaDeImpresionComponent } from './Components/productos/impresion/tecnologia-de-impresion/tecnologia-de-impresion.component';
+
 import { AplicacionesDeNegociosComponent } from './Components/productos/aplicaciones-de-negocios/aplicaciones-de-negocios.component';
 import { InteligenciaDeNegociosComponent } from './Components/productos/inteligencia-de-negocios/inteligencia-de-negocios.component';
 import { RrhhTecnologicoComponent } from './Components/productos/rrhh-tecnologico/rrhh-tecnologico.component';
@@ -61,7 +64,10 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
 
   //Productos.
-  {path: 'productos/impresion', component: ImpresionComponent},
+    //Impresión.
+    {path: 'productos/impresion/impresoras', component: ImpresorasComponent},
+    {path: 'productos/impresion/tecnologia-de-impresion', component: TecnologiaDeImpresionComponent},
+
   {path: 'productos/aplicaciones-de-negocios', component: AplicacionesDeNegociosComponent},
   {path: 'productos/inteligencia-de-negocios', component: InteligenciaDeNegociosComponent},
   {path: 'productos/rrhh-tecnologico', component: RrhhTecnologicoComponent},
