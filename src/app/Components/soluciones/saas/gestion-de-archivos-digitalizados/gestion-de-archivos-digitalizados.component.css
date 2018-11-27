@@ -12,8 +12,8 @@ hr {
 
 .imagen {
     width: 100%;
-    min-height: 200px;
-    height: 324px;
+    min-height: 250px;
+    height: 400px;
     display: flex;
     align-items: center;
 }
@@ -24,8 +24,8 @@ hr {
 
 .imagen_gestion {
     width: 100%;
-    min-height: 200px;
-    height: 324px;
+    min-height: 250px;
+    height: 400px;
     display: flex;
     align-items: center;
 }
