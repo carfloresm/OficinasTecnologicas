@@ -25,3 +25,7 @@ legend {
     min-height: 159px;
     max-height: 159px;
 }
+
+.requerido {
+	color: red;
+}
